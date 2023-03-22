@@ -1,25 +1,25 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const defultTheme = {
-    white: '#FFF',
+    white: '#FFFFFF',
   
-    'gray-100': '#E1E1E6',
-    'gray-300': '#C4C4CC',
-    'gray-400': '#8D8D99',
-    'gray-500': '#7C7C8A',
-    'gray-600': '#323238',
-    'gray-700': '#29292E',
-    'gray-800': '#202024',
-    'gray-900': '#121214',
+    'gray-100': '#FAFAFA',
+    'gray-200': '#F3F2F2',
+    'gray-300': '#EDEDED',
+    'gray-400': '#E6E5E5',
+    'gray-500': '#D7D5D5',
+    'gray-600': '#8D8686',
+    'gray-700': '#574F4D',
+    'gray-800': '#403937',
+    'gray-900': '#272221',
   
-    'green-300': '#00B37E',
-    'green-500': '#00875F',
-    'green-700': '#015F43',
+    'yellow-dark': '#C47F17',
+    'yellow': '#DBAC2C',
+    'yellow-light': '#F1E9C9',
   
-    'red-500': '#AB222E',
-    'red-700': '#7A1921',
-  
-    'yellow-500': '#FBA94C',
+    'purple-dark': '#4B2995',
+    'purple': '#8047F8',
+    'purple-light': '#EBE5F9',
 }
 
 
@@ -30,19 +30,14 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
     }
 
-    :focus {
-        outline: 0;
-        box-shadow: 0 0 0 2px ${(props) => props.theme['green-500']};
-    }
-
     body{
-        background: ${(props) => props.theme['gray-900']};
-        color: ${(props) => props.theme['gray-300']};
+        background: ${(props) => props.theme['gray-100']};
+        color: ${(props) => props.theme['gray-900']};
         -webkit-font-smoothing: antialiased
     }
 
     body, input, textarea, button{
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto', sans-serif; 
         font-weight: 400;
         font-size: 1rem;
     }
