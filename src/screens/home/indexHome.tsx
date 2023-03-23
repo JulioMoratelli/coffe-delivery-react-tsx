@@ -1,14 +1,14 @@
 import { Package } from '@phosphor-icons/react'
 import BannerCoffe from '../../../imgs/banner-coffe.svg'
-import { StyleBanner } from './styledHome'
+import { StyleBanner, StyledSubText, StyleTitle, } from './styledHome'
 
 
 export function Home() {
     return (
         <StyleBanner>
             <div>
-                <p>Encontre o café perfeito para qualquer hora do dia</p>
-                <p>Com o Coffee Delivery você recebe seu café onde estiver, a qualquer hora</p>
+                <StyleTitle>Encontre o café perfeito para qualquer hora do dia</StyleTitle>
+                <StyledSubText>Com o Coffee Delivery você recebe seu café onde estiver, a qualquer hora</StyledSubText>
 
                 <div>
                     <Package size={24}/>
