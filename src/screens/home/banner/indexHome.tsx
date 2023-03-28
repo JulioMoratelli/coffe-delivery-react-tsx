@@ -1,14 +1,15 @@
 import { Coffee, Package, ShoppingCart, Timer } from '@phosphor-icons/react'
 import BannerCoffe from '../../../../imgs/banner-coffe.svg'
 import { Store } from '../loja/indexStore'
-import { GlobalIcons, StyleBanner, StyledIconCoffe, StyledIconPackag, StyledIconShopping, StyledIconTimer, StyledSubText, StyleTitle, } from './styledHome'
+import { GlobalIcons, StyledBanner, StyledIconCoffe, StyledIconPackag, StyledIconShopping, StyledIconTimer, StyledSubText, StyledTitle, } from './styledHome'
 
 
 export function Home() {
     return (
-        <StyleBanner>
+        <div>
+        <StyledBanner>
             <div>
-                <StyleTitle>Encontre o café perfeito para qualquer hora do dia</StyleTitle>
+                <StyledTitle>Encontre o café perfeito para qualquer hora do dia</StyledTitle>
                 <StyledSubText>Com o Coffee Delivery você recebe seu café onde estiver, a qualquer hora</StyledSubText>
 
                 <GlobalIcons>
@@ -31,9 +32,9 @@ export function Home() {
                 </GlobalIcons>
             </div>
 
-            <img src={BannerCoffe} alt="" />
-
-            <Store />
-        </StyleBanner>
+            <img src={BannerCoffe} alt="" />  
+        </StyledBanner>
+        <Store/>
+    </div>
     )
 }

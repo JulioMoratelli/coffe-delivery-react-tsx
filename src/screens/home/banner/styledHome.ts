@@ -1,25 +1,24 @@
 import styled from "styled-components";
 
-export const StyleBanner = styled.article`
+export const StyledBanner = styled.article`
   display: flex;
   justify-content: space-around;
-  margin-top: 3rem;
+  margin-left: 1rem;
   color: ${(props) => props.theme["gray-900"]};
 
   img {
+    margin-top: 1rem;
     width: 35rem;
-    height: 35rem;
-    padding: 0 0 7rem 0;
   }
 `;
 
-export const StyleTitle = styled.p`
+export const StyledTitle = styled.p`
   display: flex;
   font-family: "Baloo 2";
   font-size: 48px;
   font-weight: 800;
   width: 600px;
-  padding: 2rem 2rem 1rem 0;
+  padding: 2rem 2rem 2rem 0;
 `;
 
 export const StyledSubText = styled.p`
