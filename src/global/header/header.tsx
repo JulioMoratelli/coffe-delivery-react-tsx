@@ -6,7 +6,7 @@ import { LayoutContainer, NavBar, StyleCheckout, StyleLocation } from './stylesH
 export function Header() {
     return (
         <LayoutContainer>
-            <NavLink to="/home" title="Mercado">
+            <NavLink to="/" title="Mercado">
                 <img src={LogoCoffe} alt=""/>
             </NavLink>
             <NavBar>

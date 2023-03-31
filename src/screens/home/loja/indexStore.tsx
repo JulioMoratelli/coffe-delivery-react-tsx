@@ -1,31 +1,31 @@
 import { ShoppingCart } from "@phosphor-icons/react";
 import coffes from "../../../../imgs/coffes.svg";
-import { StyledImgCoffe, SylesStore } from "./styledStore";
+import { StyledFormAddToCart, StyledImgCoffe, StyledTextDescription, StyledStore } from "./styledStore";
 
 export function Store() {
   return (
     <div>
       <p>Nossos Cafés</p>
-
-      <SylesStore>
+      <StyledStore>
         <StyledImgCoffe>
           <img src={coffes} alt="" />
           <p>TRADICIONAL</p>
         </StyledImgCoffe>
 
-        <div>
-          <p>Expresso Tradicional</p>O tradicional café feito com água quente e
+        <StyledTextDescription>
+          <p>Expresso Tradicional</p>
+          O tradicional café feito com água quente e
           grãos moídos
-        </div>
+        </StyledTextDescription>
 
-        <div>
-          <p>R$ 9,90</p>
-          <input type="number" name="" id="" />
+        <StyledFormAddToCart>
+          R$ <p>9,90</p>
+          <input type="number" min={0} />
           <button>
             <ShoppingCart size={24} />
           </button>
-        </div>
-      </SylesStore>
+        </StyledFormAddToCart>
+      </StyledStore>
     </div>
   );
 }
