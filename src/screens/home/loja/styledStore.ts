@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
 
+export const StyledGlobalStore = styled.div`
+  
+`
+
+
+
 export const StyledStore = styled.div`
     display: flex ;
     align-items: center;
@@ -11,7 +17,7 @@ export const StyledStore = styled.div`
     padding: 1rem;
     border-radius: 6px 36px;
 
-    background-color: ${(props) => props.theme['gray-300']};
+    background-color: #F3F2F2;
 `
 
 export const StyledImgCoffe = styled.div`
@@ -54,6 +60,8 @@ export const StyledFormAddToCart = styled.div`
   display: flex;
   padding: 5px;
   margin-top: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
 
   font-family: 'Roboto';
   font-style: normal;
@@ -62,13 +70,35 @@ export const StyledFormAddToCart = styled.div`
 
   p{
     font-family: 'Baloo 2';
-    font-size: 24px;
+    font-size: 25px;
     font-weight: 800;
+    margin-right: 20px;
+    margin-left: 4px;
+    color: #574F4D;
   }
 
   input{
     width: 72px;
     height: 38px;
     background: #E6E5E5;
+    margin-right: 10px;
+
+    border: transparent;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  button{
+    width: 38px;
+    height: 38px;
+
+    background: #4B2995;
+    color: #F3F2F2;
+    border-radius: 6px;
+    border: transparent; 
+    
+    :hover{
+      background-color: #8047F8;
+    }
   }
 `
