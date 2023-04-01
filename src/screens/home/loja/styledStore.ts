@@ -2,9 +2,24 @@ import styled from "styled-components";
 
 
 export const StyledGlobalStore = styled.div`
+  margin-top: 2rem;
+  padding: 1rem;
+
+  article{
+    display: flex;
+    margin-top: 0.5rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  p{
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+  }
   
 `
-
 
 
 export const StyledStore = styled.div`
@@ -16,6 +31,7 @@ export const StyledStore = styled.div`
     height: 310px;
     padding: 1rem;
     border-radius: 6px 36px;
+    margin-top: 4rem;
 
     background-color: #F3F2F2;
 `
