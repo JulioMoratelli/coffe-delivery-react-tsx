@@ -1,6 +1,7 @@
-import { ShoppingCart } from "@phosphor-icons/react";
+import { Minus, Plus, ShoppingCart } from "@phosphor-icons/react";
 import coffes from "../../../../imgs/coffes.svg";
-import { StyledFormAddToCart, StyledImgCoffe, StyledTextDescription, StyledStore, StyledGlobalStore } from "./styledStore";
+import cart from "../../../../imgs/cart.svg";
+import { StyledFormAddToCart, StyledImgCoffe, StyledTextDescription, StyledStore, StyledGlobalStore, ButtonShoppingCart } from "./styledStore";
 
 export function Store() {
   return (
@@ -10,7 +11,7 @@ export function Store() {
       <StyledStore>
         <StyledImgCoffe>
           <img src={coffes} alt="" />
-          <p>TRADICIONAL</p>
+          <p>tradicional</p>
         </StyledImgCoffe>
 
         <StyledTextDescription>
@@ -21,17 +22,27 @@ export function Store() {
 
         <StyledFormAddToCart>
           R$ <p>9,90</p>
-          <input type="number" min={0} />
-          <button>
-            <ShoppingCart size={24} />
-          </button>
+          
+          <div>
+            <button>
+              <Minus size={15}/>
+            </button>
+            <p>1</p>
+            <button>
+              <Plus size={15}/>
+            </button>
+          </div>
+
+          <ButtonShoppingCart>
+            <img src={cart} alt="" />
+          </ButtonShoppingCart>
         </StyledFormAddToCart>
       </StyledStore>
 
       <StyledStore>
         <StyledImgCoffe>
           <img src={coffes} alt="" />
-          <p>TRADICIONAL</p>
+          <p>tradicional</p>
         </StyledImgCoffe>
 
         <StyledTextDescription>
@@ -42,17 +53,27 @@ export function Store() {
 
         <StyledFormAddToCart>
           R$ <p>9,90</p>
-          <input type="number" min={0} />
-          <button>
-            <ShoppingCart size={24} />
-          </button>
+          
+          <div>
+            <button>
+              <Minus size={15}/>
+            </button>
+            <p>1</p>
+            <button>
+              <Plus size={15}/>
+            </button>
+          </div>
+
+          <ButtonShoppingCart>
+            <img src={cart} alt="" />
+          </ButtonShoppingCart>
         </StyledFormAddToCart>
       </StyledStore>
 
       <StyledStore>
         <StyledImgCoffe>
           <img src={coffes} alt="" />
-          <p>TRADICIONAL</p>
+          <p>tradicional</p>
         </StyledImgCoffe>
 
         <StyledTextDescription>
@@ -63,17 +84,27 @@ export function Store() {
 
         <StyledFormAddToCart>
           R$ <p>9,90</p>
-          <input type="number" min={0} />
-          <button>
-            <ShoppingCart size={24} />
-          </button>
+          
+          <div>
+            <button>
+              <Minus size={15}/>
+            </button>
+            <p>1</p>
+            <button>
+              <Plus size={15}/>
+            </button>
+          </div>
+
+          <ButtonShoppingCart>
+            <img src={cart} alt="" />
+          </ButtonShoppingCart>
         </StyledFormAddToCart>
       </StyledStore>
 
       <StyledStore>
         <StyledImgCoffe>
           <img src={coffes} alt="" />
-          <p>TRADICIONAL</p>
+          <p>tradicional</p>
         </StyledImgCoffe>
 
         <StyledTextDescription>
@@ -84,17 +115,27 @@ export function Store() {
 
         <StyledFormAddToCart>
           R$ <p>9,90</p>
-          <input type="number" min={0} />
-          <button>
-            <ShoppingCart size={24} />
-          </button>
+          
+          <div>
+            <button>
+              <Minus size={15}/>
+            </button>
+            <p>1</p>
+            <button>
+              <Plus size={15}/>
+            </button>
+          </div>
+
+          <ButtonShoppingCart>
+            <img src={cart} alt="" />
+          </ButtonShoppingCart>
         </StyledFormAddToCart>
       </StyledStore>
 
       <StyledStore>
         <StyledImgCoffe>
           <img src={coffes} alt="" />
-          <p>TRADICIONAL</p>
+          <p>tradicional</p>
         </StyledImgCoffe>
 
         <StyledTextDescription>
@@ -105,10 +146,20 @@ export function Store() {
 
         <StyledFormAddToCart>
           R$ <p>9,90</p>
-          <input type="number" min={0} />
-          <button>
-            <ShoppingCart size={24} />
-          </button>
+          
+          <div>
+            <button>
+              <Minus size={15}/>
+            </button>
+            <p>1</p>
+            <button>
+              <Plus size={15}/>
+            </button>
+          </div>
+
+          <ButtonShoppingCart>
+            <img src={cart} alt="" />
+          </ButtonShoppingCart>
         </StyledFormAddToCart>
       </StyledStore>
       </article>

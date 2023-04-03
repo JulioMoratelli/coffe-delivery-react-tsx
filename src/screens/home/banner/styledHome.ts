@@ -1,10 +1,12 @@
 import styled from "styled-components";
 
+
 export const StyledBanner = styled.article`
   display: flex;
   justify-content: space-around;
   margin-left: 1rem;
   color: ${(props) => props.theme["gray-900"]};
+  background-image: url("../../../../imgs/background-banner-coffe.svg");
 
   img {
     margin-top: 1rem;
@@ -38,6 +40,7 @@ export const GlobalIcons = styled.footer`
   width: 600px;
   gap: 10px;
   flex-wrap: wrap;
+  margin-bottom: 9rem;
 
   div {
     display: flex;
