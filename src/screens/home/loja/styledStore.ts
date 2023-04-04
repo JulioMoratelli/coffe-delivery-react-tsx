@@ -2,13 +2,15 @@ import styled from "styled-components";
 
 
 export const StyledGlobalStore = styled.div`
-  padding: 1rem;
+  padding: 0rem 10rem 0rem 10rem;
+  
 
   article{
     display: flex;
     margin-top: 0.5rem;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 3rem;
   }
 
   p{

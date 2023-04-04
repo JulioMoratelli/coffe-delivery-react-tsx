@@ -5,7 +5,7 @@ export const LayoutContainer = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0rem 2rem 1rem 1rem;
+    padding: 2rem 10rem 1rem 10rem;
 `
 
 export const NavBar = styled.nav`

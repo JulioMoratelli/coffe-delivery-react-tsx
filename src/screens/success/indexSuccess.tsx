@@ -1,5 +1,6 @@
+
 export function Success() {
     return (
-        <div>success</div>
+        <p>success</p>
     )
 }
