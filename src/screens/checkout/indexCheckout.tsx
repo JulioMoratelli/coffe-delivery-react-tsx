@@ -1,15 +1,16 @@
 import { MapPinLine } from "@phosphor-icons/react";
+import { StyledAllCheckout } from "./styledCheckout";
 
 export function Checkout() {
   return (
-    <div>
+    <StyledAllCheckout>
       <div>
         <p>Complete seu pedido</p>
 
         <div>
           <MapPinLine size={24} />
-          <p>Endereço de Entrega</p>
-          Informe o endereço onde deseja receber seu pedido
+          <h3>Endereço de Entrega</h3>
+          <p>Informe o endereço onde deseja receber seu pedido</p>
           <form action="">
             <input type="number" placeholder="CEP" required />
             <input type="text" placeholder="Nome" required />
@@ -22,8 +23,8 @@ export function Checkout() {
         </div>
 
         <div>
-          <p>Pagamento</p>
-          O pagamento é feito na entrega. Escolha a forma que deseja pagar
+          <h3>Pagamento</h3>
+          <p>O pagamento é feito na entrega. Escolha a forma que deseja pagar</p>
 
           <div>
             <button>cartão de crédito</button>
@@ -32,6 +33,6 @@ export function Checkout() {
           </div>
         </div>
       </div>
-    </div>
+    </StyledAllCheckout>
   );
 }
