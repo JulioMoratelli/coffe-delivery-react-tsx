@@ -11,12 +11,10 @@ export const StyledAllCheckout = styled.div`
     font-style: normal;
     font-size: 18px;
     color: #403937;
-
   }
 `
 
 export const DeliveryAddress = styled.div`
-  border-radius: 6px;
   width: 640px;
   height: 591px;
 `
@@ -27,6 +25,9 @@ export const DivFormAddress = styled.div`
   height: 372px; 
   padding: 2.5rem;
   flex-wrap: wrap;
+  border-radius: 6px;
+  margin-top: 2rem;
+
   background: #F3F2F2;
 
   svg{
@@ -37,6 +38,12 @@ export const DivFormAddress = styled.div`
 
   h3{
     height: 0rem;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+
+    color: #403937;
   }
 
   p{
@@ -55,3 +62,57 @@ export const DivFormAddress = styled.div`
     margin-top: 3rem;
   }
 `
+
+export const FormStyledInput = styled.form`
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+
+  div{
+    display: flex;
+    gap: 12px;
+  }
+  
+  input {
+    border: 1px solid #E6E5E5;
+    border-radius: 4px;
+    height: 42px;
+    padding: 1rem;
+
+    background: #EEEDED;
+    
+    ::placeholder{
+      color: #8D8686;
+    }
+  }
+
+  :hover input {
+    color: #574F4D;
+  }
+`
+
+export const Payment = styled.div`
+  display: flex;
+  margin-top: 1rem;
+  width: 640px;
+  height: 207px;
+  background: #F3F2F2;
+  padding: 2.5rem;
+
+  svg{
+    width: 24px;
+    height: 24px;
+  }
+
+  h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    width: 200px;
+
+    color: #403937;
+  }
+
+`
+
