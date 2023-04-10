@@ -22,6 +22,7 @@ import {
   BagProducts,
   PurchaseInformation,
   ButtonDelet,
+  AccountTotal,
 } from "./styledCheckout";
 
 export function Checkout() {
@@ -126,29 +127,40 @@ export function Checkout() {
                       <Plus size={16} />
                     </button>
                   </div>
-                  <ButtonDelet><Trash size={16} />remover</ButtonDelet>
+                  <ButtonDelet><Trash size={16} /><p>remover</p></ButtonDelet>
                 </PurchaseInformation>
               </div>
               <p>R$ 9,90</p>
             </BagProducts>
-            <div>
-              <img src={coffes} alt="" />
-              <h3>Expresso Tradicional</h3>
+            <BagProducts>
+              <div>
+                <img src={coffes} alt="" />
+                <PurchaseInformation>
+                  <h3>Expresso Tradicional</h3>
+                  <div>
+                    <button>
+                      <Minus size={16} />
+                    </button>
+                      <p>1</p>
+                    <button>
+                      <Plus size={16} />
+                    </button>
+                  </div>
+                  <ButtonDelet><Trash size={16} /><p>remover</p></ButtonDelet>
+                </PurchaseInformation>
+              </div>
               <p>R$ 9,90</p>
-            </div>
+            </BagProducts>
           </div>
 
-          <div>
-            <p>
-              Total de items <span>R$29,70</span>
-            </p>
-            <p>
-              Entrega <span>R$3,50</span>
-            </p>
-            <h1>
-              Total <h3>R$ 33,20</h3>
-            </h1>
-          </div>
+          <AccountTotal>
+            <p>Total de items</p>
+            <span>R$29,70</span>
+            <p>Entrega</p>
+            <span>R$ 3,50</span>
+            <h1>Total</h1>
+            <h3>R$ 33,20</h3>
+          </AccountTotal>
 
           <button>confirmar pedido</button>
         </PaymentStatus>
