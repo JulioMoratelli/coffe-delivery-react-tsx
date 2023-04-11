@@ -177,8 +177,9 @@ export const BagProducts = styled.div`
   width: 370px;
   height: 80px;
   display: flex;
-  gap: 20px;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
 
   p {
     font-family: "Roboto";
@@ -196,6 +197,14 @@ export const BagProducts = styled.div`
       height: 64px;
       margin-right: 20px;
     }
+  }
+
+  ::after{
+    content: '';
+    width: 368px;
+    height: 0px;
+    border: 1px solid red;
+    margin: 15px 0px 15px 0px;
   }
 `;
 
