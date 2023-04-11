@@ -148,15 +148,14 @@ export const PaymentMethods = styled.div`
 
     background: #e6e5e5;
     text-transform: uppercase;
-
-    :hover{
-      background: #e6e5e5;;
-    }
-
     svg {
       margin-right: 12px;
       margin-left: 16px;
     }
+  }
+
+  :hover button{
+      background: #D7D5D5;
   }
 `;
 
@@ -175,7 +174,7 @@ export const PaymentStatus = styled.div`
 `;
 
 export const BagProducts = styled.div`
-  width: 377px;
+  width: 370px;
   height: 80px;
   display: flex;
   gap: 20px;
@@ -272,15 +271,21 @@ export const AccountTotal = styled.div`
   height: 92px;  
   justify-content: space-between;
   flex-wrap: wrap;
-  
-
-
+  margin-top: 24px;
+  margin-bottom: 24px;
 
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   color: #574F4D;
+
+  div{
+    display: flex;
+    justify-content: space-between;
+    width: 368px;
+    height: 21px;
+  }
 
   p{
     font-family: 'Roboto';
@@ -289,5 +294,20 @@ export const AccountTotal = styled.div`
     font-size: 16px;
     color: #574F4D;
   }
-  
+`
+
+export const ConfirmOrder = styled.button`
+  width: 368px;
+  height: 46px;
+
+  background: #DBAC2C;
+  border-radius: 6px;
+  border: transparent;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #FFFFFF;
 `

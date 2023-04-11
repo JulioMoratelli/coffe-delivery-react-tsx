@@ -23,6 +23,7 @@ import {
   PurchaseInformation,
   ButtonDelet,
   AccountTotal,
+  ConfirmOrder,
 } from "./styledCheckout";
 
 export function Checkout() {
@@ -154,15 +155,21 @@ export function Checkout() {
           </div>
 
           <AccountTotal>
-            <p>Total de items</p>
-            <span>R$29,70</span>
-            <p>Entrega</p>
+            <div>
+              <p>Total de items</p>
+              <span>R$29,70</span>
+            </div>
+            <div>
+              <p>Entrega</p>
             <span>R$ 3,50</span>
-            <h1>Total</h1>
+            </div>
+            <div>
+              <h1>Total</h1>
             <h3>R$ 33,20</h3>
+            </div>         
           </AccountTotal>
 
-          <button>confirmar pedido</button>
+          <ConfirmOrder>confirmar pedido</ConfirmOrder>
         </PaymentStatus>
       </AllCoffesSelect>
     </StyledAllCheckout>
