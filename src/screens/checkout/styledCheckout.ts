@@ -152,10 +152,10 @@ export const PaymentMethods = styled.div`
       margin-right: 12px;
       margin-left: 16px;
     }
-  }
 
-  :hover button{
+    &:hover{
       background: #D7D5D5;
+    }
   }
 `;
 
@@ -165,7 +165,7 @@ export const AllCoffesSelect = styled.div`
 
 export const PaymentStatus = styled.div`
   width: 448px;
-  height: 498px;
+  height: auto;
   border-radius: 6px 44px;
   padding: 2.5rem;
   margin-top: 2rem;
@@ -175,11 +175,9 @@ export const PaymentStatus = styled.div`
 
 export const BagProducts = styled.div`
   width: 370px;
-  height: 80px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 24px;
 
   p {
     font-family: "Roboto";
@@ -199,12 +197,12 @@ export const BagProducts = styled.div`
     }
   }
 
-  ::after{
+  &::after{
     content: '';
     width: 368px;
     height: 0px;
-    border: 1px solid red;
-    margin: 15px 0px 15px 0px;
+    border-bottom: 1px solid #E6E5E5;
+    margin: 24px 0px 24px 0px;
   }
 `;
 
@@ -267,7 +265,7 @@ export const ButtonDelet = styled.button`
     color: #8047f8;
   }
 
-  :hover {
+  &:hover {
     background: #D7D5D5;
     color: #4B2995;
   }
