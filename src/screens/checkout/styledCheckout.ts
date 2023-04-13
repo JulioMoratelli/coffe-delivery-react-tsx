@@ -86,6 +86,7 @@ export const FormStyledInput = styled.form`
 
   :hover input {
     color: #574f4d;
+    cursor: pointer;
   }
 `;
 
@@ -155,6 +156,7 @@ export const PaymentMethods = styled.div`
 
     &:hover{
       background: #D7D5D5;
+      cursor: pointer;
     }
   }
 `;
@@ -238,6 +240,7 @@ export const PurchaseInformation = styled.div`
 
       :hover {
         color: #4B2995;
+        cursor: pointer;
       }
     }
   }
@@ -268,6 +271,7 @@ export const ButtonDelet = styled.button`
   &:hover {
     background: #D7D5D5;
     color: #4B2995;
+    cursor: pointer;
   }
 `;
 
@@ -317,4 +321,9 @@ export const ConfirmOrder = styled.button`
   font-size: 14px;
   text-transform: uppercase;
   color: #FFFFFF;
+
+  :hover{
+    background-color: #C47F17;
+    cursor: pointer;
+  }
 `

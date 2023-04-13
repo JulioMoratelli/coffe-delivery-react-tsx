@@ -1,13 +1,14 @@
 import { CurrencyDollar, MapPin, Timer } from "@phosphor-icons/react";
+import bannersuccess from "../../../imgs/banner-success.svg";
+import { AllDivSuccess, TextConfirmed } from "./styledSuccess";
 
 export function Success() {
   return (
-    <div>
-      <div>
-        <div>
+    <AllDivSuccess>
+        <TextConfirmed>
           <h1>Uhu! Pedido confirmado</h1>
           <p>Agora é só aguardar que logo o café chegará até você</p>
-        </div>
+        </TextConfirmed>
 
         <div>
           <div>
@@ -34,10 +35,9 @@ export function Success() {
           </div>
 
           <div>
-            <img src="" alt="" />
+            <img src={bannersuccess} alt="" />
           </div>
         </div>
-      </div>
-    </div>
+    </AllDivSuccess>
   );
 }
