@@ -20,11 +20,9 @@ export const DeliveryAddress = styled.div`
 export const DivFormAddress = styled.div`
   display: flex;
   width: 640px;
-  height: 372px;
-  padding: 2.5rem;
   flex-wrap: wrap;
   border-radius: 6px;
-  margin-top: 2rem;
+  margin-top: 1.7rem;
 
   background: #f3f2f2;
 
@@ -34,30 +32,9 @@ export const DivFormAddress = styled.div`
     height: 24;
   }
 
-  h3 {
-    height: 0rem;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-
-    color: #403937;
-  }
-
-  p {
-    font-family: "Roboto";
-    font-size: 14px;
-    width: 530px;
-    padding-left: 35px;
-    height: 0rem;
-
-    color: #574f4d;
-  }
 
   form {
     width: 560px;
-    height: 216px;
-    margin-top: 3rem;
   }
 `;
 
@@ -65,6 +42,7 @@ export const FormStyledInput = styled.form`
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  margin-top: 1rem;
 
   div {
     display: flex;
@@ -79,38 +57,52 @@ export const FormStyledInput = styled.form`
 
     background: #eeeded;
 
+    cursor: pointer;
+
     ::placeholder {
       color: #8d8686;
     }
+
+    &:focus {
+      color: #20252e;
+      outline: 1px solid #8d8686;
+    }
   }
 
-  :hover input {
-    color: #574f4d;
-    cursor: pointer;
-  }
+  
 `;
 
 export const Payment = styled.div`
   display: flex;
-  margin-top: 1rem;
+  margin-top: 2.5rem;
   width: 640px;
-  height: 207px;
   background: #f3f2f2;
-  padding: 2.5rem;
   flex-wrap: wrap;
   border-radius: 6px;
 
   svg {
     margin-right: 8px;
     color: #8047f8;
+    margin-top: 1.1rem;
   }
+
+  div {
+    display: flex;
+    width: 560px;
+    height: 51px;
+    margin-top: 1rem;
+  }
+`;
+
+export const TitlePayments = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 
   h3 {
     font-family: "Roboto";
-    font-weight: 400;
+    font-weight: 600;
     font-size: 16px;
-    width: 200px;
-    height: 0;
     margin-top: 2px;
 
     color: #403937;
@@ -120,26 +112,17 @@ export const Payment = styled.div`
     font-family: "Roboto";
     font-weight: 400;
     font-size: 14px;
-    margin-left: 1.8rem;
-    margin-top: 2px;
 
     color: #574f4d;
   }
+`
 
-  div {
-    margin-top: 32px;
-
-    display: flex;
-    gap: 12px;
-    width: 560px;
-    height: 51px;
-  }
-`;
 export const PaymentMethods = styled.div`
   gap: 12px;
 
   button {
     display: flex;
+    justify-content: center;
     align-items: center;
     border: transparent;
     width: 178.67px;
@@ -150,8 +133,7 @@ export const PaymentMethods = styled.div`
     background: #e6e5e5;
     text-transform: uppercase;
     svg {
-      margin-right: 12px;
-      margin-left: 16px;
+      margin-top: 0;
     }
 
     &:hover{
@@ -162,14 +144,13 @@ export const PaymentMethods = styled.div`
 `;
 
 export const AllCoffesSelect = styled.div`
-  margin-left: 5rem;
+  
 `;
 
 export const PaymentStatus = styled.div`
   width: 448px;
   height: auto;
   border-radius: 6px 44px;
-  padding: 2.5rem;
   margin-top: 2rem;
 
   background: #f3f2f2;

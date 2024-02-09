@@ -24,6 +24,7 @@ import {
   ButtonDelet,
   AccountTotal,
   ConfirmOrder,
+  TitlePayments,
 } from "./styledCheckout";
 
 export function Checkout() {
@@ -33,9 +34,23 @@ export function Checkout() {
         <p>Complete seu pedido</p>
         <DivFormAddress>
           <MapPinLine size={24} />
-          <h3>Endereço de Entrega</h3>
-          <p>Informe o endereço onde deseja receber seu pedido</p>
+          <TitlePayments>
+            <h3>Endereço de Entrega</h3>
+            <p>Informe o endereço onde deseja receber seu pedido</p>
+          </TitlePayments>
           <FormStyledInput action="">
+            <input
+              style={{ width: "270px" }}
+              type="text"
+              placeholder="Primeiro nome"
+              required
+            />
+            <input
+              style={{ width: "270px" }}
+              type="text"
+              placeholder="Sobrenome"
+              required
+            />
             <input
               style={{ width: "200px" }}
               type="number"
@@ -43,53 +58,53 @@ export function Checkout() {
               required
             />
             <input
-              style={{ width: "560px" }}
+              style={{ width: "260px" }}
+              type="text"
+              placeholder="Cidade"
+              required
+            />
+            <input
+              style={{ width: "60px" }}
+              type="text"
+              placeholder="UF"
+              required
+            />
+            <input
+              style={{ width: "555px" }}
               type="text"
               placeholder="Rua"
               required
             />
-            <div>
-              <input
-                style={{ width: "200px" }}
-                type="number"
-                placeholder="Número"
-                required
-              />
-              <input
-                style={{ width: "348px" }}
-                type="text"
-                placeholder="Complemento"
-              />
-            </div>
-            <div>
-              <input
-                style={{ width: "200px" }}
-                type="text"
-                placeholder="Bairro"
-                required
-              />
-              <input
-                style={{ width: "276px" }}
-                type="text"
-                placeholder="Cidade"
-                required
-              />
-              <input
-                style={{ width: "60px" }}
-                type="text"
-                placeholder="UF"
-                required
-              />
-            </div>
+            <input
+              style={{ width: "200px" }}
+              type="number"
+              placeholder="Número"
+              required
+            />
+            <input
+              style={{ width: "340px" }}
+              type="text"
+              placeholder="Bairro"
+              required
+            />
+            <input
+              style={{ width: "555px" }}
+              type="text"
+              placeholder="Complemento"
+            />
           </FormStyledInput>
         </DivFormAddress>
 
         <Payment>
           <CurrencyDollar size={22} />
-          <h3>Pagamento</h3>
-          <p>
-            O pagamento é feito na entrega. Escolha a forma que deseja pagar
-          </p>
+
+          <TitlePayments>
+            <h3>Pagamento</h3>
+            <p>
+              O pagamento é feito na entrega. Escolha a forma que deseja pagar
+            </p>
+          </TitlePayments>
+
 
           <PaymentMethods>
             <button>
@@ -123,7 +138,7 @@ export function Checkout() {
                     <button>
                       <Minus size={16} />
                     </button>
-                      <p>1</p>
+                    <p>1</p>
                     <button>
                       <Plus size={16} />
                     </button>
@@ -142,7 +157,7 @@ export function Checkout() {
                     <button>
                       <Minus size={16} />
                     </button>
-                      <p>1</p>
+                    <p>1</p>
                     <button>
                       <Plus size={16} />
                     </button>
@@ -161,12 +176,12 @@ export function Checkout() {
             </div>
             <div>
               <p>Entrega</p>
-            <span>R$ 3,50</span>
+              <span>R$ 3,50</span>
             </div>
             <div>
               <h1>Total</h1>
-            <h3>R$ 33,20</h3>
-            </div>         
+              <h3>R$ 33,20</h3>
+            </div>
           </AccountTotal>
 
           <ConfirmOrder>confirmar pedido</ConfirmOrder>
