@@ -7,19 +7,23 @@ export function Header() {
     return (
         <LayoutContainer>
             <NavLink to="/" title="Mercado">
-                <img src={LogoCoffe} alt=""/>
+                <img src={LogoCoffe} alt="" />
             </NavLink>
             <NavBar>
-                <NavLink to="/success" title="Endereço">
+                <NavLink to="/success" title="Endereço"
+                    style={{
+                        textDecoration: 'none'
+                    }}
+                >
                     <StyleLocation>
-                        <MapPin size={24} /> 
-                        <p>Jau, SP</p> 
+                        <MapPin size={24} />
+                        <p>Jau, SP</p>
                     </StyleLocation>
                 </NavLink>
-                <NavLink to="/checkout" title="Finalize o seu pedido"> 
-                <StyleCheckout>
-                    <ShoppingCart size={24} />
-                </StyleCheckout>
+                <NavLink to="/checkout" title="Finalize o seu pedido">
+                    <StyleCheckout>
+                        <ShoppingCart size={24} />
+                    </StyleCheckout>
                 </NavLink>
             </NavBar>
         </LayoutContainer>

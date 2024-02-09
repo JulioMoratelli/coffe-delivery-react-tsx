@@ -21,13 +21,15 @@ export const StyleLocation = styled.div`
     align-items: center;
     border-radius: 6px; 
     font-weight: bold;
-
+    text-decoration: none;
     background-color: ${(props) => props.theme['purple-light']};
+    transition: 0.3s;
 
     &:hover {
         background-color: ${(props) => props.theme['purple-dark']};
         color: ${(props) => props.theme['purple-light']}
       }
+  
 `
 
 export const StyleCheckout = styled.div`
