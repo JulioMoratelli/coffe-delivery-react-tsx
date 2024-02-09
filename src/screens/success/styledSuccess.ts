@@ -59,12 +59,14 @@ export const GradientStyledA = styled.div`
   
 
   div{
-    
-    gap: 2px;
+    display: flex;
+    align-items: left;
   }
 
   svg{
-    padding: 4px;
+    padding: 5px;
+    margin-right: 16px;
+
     background-color: purple;
     border-radius: 100px;
     color: white;
@@ -73,6 +75,12 @@ export const GradientStyledA = styled.div`
   span{
     display: flex;
     flex-wrap: wrap;
+    color: var(--Base-Text, #574F4D);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
   }
 `
 
