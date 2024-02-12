@@ -1,14 +1,22 @@
 import styled from "styled-components";
 
 
+export const AlignItemCenter = styled.div`
+  width: 100%;
+
+`;
+
+
+
 export const StyledGlobalStore = styled.div`
-  padding: 0rem 10rem 0rem 10rem;
-  
+  max-width: 1200px;
+  width: 1200px;
+  margin: auto;
 
   article{
     display: flex;
     margin-top: 0.5rem;
-    justify-content: space-between;
+    justify-content: start;
     flex-wrap: wrap;
     gap: 3rem;
   }

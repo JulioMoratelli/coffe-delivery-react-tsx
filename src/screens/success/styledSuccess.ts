@@ -1,12 +1,20 @@
 import styled from "styled-components";
 
-
 export const AllDivSuccess = styled.div`
-  padding: 5rem 10rem;
+  max-width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 3rem;
+justify-content: space-between;
+`
+
+
+export const DivStyleContext = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: start;
+  
 `
+
 
 export const TextConfirmed = styled.div`
   margin-bottom: 2.5rem;
@@ -31,7 +39,21 @@ export const TextConfirmed = styled.div`
 export const StyledStatusDelivery = styled.div`
   display: flex;
   width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
 `
+
+
+export const GradientStyledA = styled.div`
+  background-image: linear-gradient(to right, #DBAC2C, #8047F8);
+  border-bottom-left-radius: 36px;
+  border-top-right-radius: 36px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  justify-content: start;
+  padding: 1px;
+`
+
 
 export const StatusDelivery = styled.div` 
   border: 2px solid transparent;
@@ -40,37 +62,11 @@ export const StatusDelivery = styled.div`
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
 
-  display: flex;
-  justify-content: start;
   flex-wrap: wrap;
   width: 100%;
   height: 100%;
   background: #FAFAFA;
   padding: 2.5rem;
-`
-
-export const GradientStyledA = styled.div`
-  background-image: linear-gradient(to right, #DBAC2C, #8047F8);
-  border-bottom-left-radius: 36px;
-  border-top-right-radius: 36px;
-  border-top-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  padding: 1px;
-  
-
-  div{
-    display: flex;
-    align-items: left;
-  }
-
-  svg{
-    padding: 5px;
-    margin-right: 16px;
-
-    background-color: purple;
-    border-radius: 100px;
-    color: white;
-  }
 
   span{
     display: flex;
@@ -82,5 +78,31 @@ export const GradientStyledA = styled.div`
     font-weight: 700;
     line-height: 130%;
   }
+
+  div {
+    display: flex; 
+    margin-bottom: 20px;
+    gap: 1rem;
+  }
+
+  div:last-child{
+    margin-bottom: 0px;
+  }
+`
+
+export const DivIconsSvg = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8047F8;
+    border-radius: 100px;
+    min-width: 36px;
+    min-height: 36px;
+    color: white;
+
+    svg{
+      width: 20px;
+      height: 20px;
+    }
 `
 

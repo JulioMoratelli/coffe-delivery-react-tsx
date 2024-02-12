@@ -1,7 +1,15 @@
 import styled from "styled-components";
 
+export const DeliveryAlignCenter = styled.div`
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+`
+
 export const StyledAllCheckout = styled.div`
-  padding: 3rem 10rem 0rem 10rem;
+  max-width: 1200px;
+  margin: auto;
   display: flex;
 
   p {
@@ -144,14 +152,16 @@ export const PaymentMethods = styled.div`
 `;
 
 export const AllCoffesSelect = styled.div`
+  margin-left: auto;
   
 `;
 
 export const PaymentStatus = styled.div`
-  width: 448px;
+  //width: 448px;
   height: auto;
   border-radius: 6px 44px;
   margin-top: 2rem;
+  //margin-left: 20px;
 
   background: #f3f2f2;
 `;

@@ -1,16 +1,22 @@
 import styled from "styled-components";
 
 
+export const AlignItemsCenter = styled.div`
+  width: 100%;
+  align-items: center;
+`;
+
 export const StyledBanner = styled.article`
   display: flex;
-  justify-content: space-around;
+  width: 1200px;
+  margin: auto;
+  justify-content: space-between;
   color: ${(props) => props.theme["gray-900"]};
   background-image: url("../../../../imgs/background-banner-coffe.svg");
-  padding: 1rem 4rem 0rem 5rem;
 
   img {
     margin-bottom: 4rem;
-    width: 35rem;
+    width: 36rem;
   }
 `;
 

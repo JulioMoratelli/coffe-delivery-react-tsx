@@ -3,9 +3,11 @@ import styled from "styled-components";
 
 export const LayoutContainer = styled.header`
     display: flex;
-    align-items: center;
+    margin: auto;
+    max-width: 1200px;
+    width: 100%;
     justify-content: space-between;
-    padding: 2rem 10rem 1rem 10rem;
+    padding-top: 2rem;
 `
 
 export const NavBar = styled.nav`
@@ -33,9 +35,9 @@ export const StyleLocation = styled.div`
 `
 
 export const StyleCheckout = styled.div`
-    padding: 8px;
-    gap: 0.3rem;
+    display: flex;
     align-items: center;
+    padding: 10px;
     border-radius: 6px;
     
     background-color: ${(props) => props.theme['yellow-light']};
@@ -44,5 +46,20 @@ export const StyleCheckout = styled.div`
     &:hover {
         background-color: ${(props) => props.theme['yellow-dark']};
         color: ${(props) => props.theme['yellow-light']}
+      }
+`
+
+export const IconLogin = styled.div`
+    display: flex;
+    align-items: center;
+    padding: 6.5px;
+    border-radius: 6px;
+    
+    background-color: #CBE4FF;
+    color: #0079FF;
+
+    &:hover {
+        background-color: #0079FF;
+        color: #CBE4FF;
       }
 `
