@@ -12,7 +12,6 @@ justify-content: space-between;
 export const DivStyleContext = styled.div`
   display: flex;
   flex-wrap: wrap;
-  
 `
 
 
@@ -25,7 +24,7 @@ export const TextConfirmed = styled.div`
     font-weight: 800;
     font-size: 32px;
 
-    color: #C47F17;
+    color: #8047F8;
   }
 
   p{

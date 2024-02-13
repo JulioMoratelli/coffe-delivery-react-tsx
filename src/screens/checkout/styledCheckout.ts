@@ -15,8 +15,8 @@ export const StyledAllCheckout = styled.div`
   p {
     font-family: "Baloo 2";
     font-style: normal;
-    font-size: 18px;
-    color: #403937;
+    font-size: 32px;
+    color: #c47f17;
   }
 `;
 
