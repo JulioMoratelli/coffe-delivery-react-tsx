@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 
 export const AlignDivCenter = styled.div`
-  margin-top: 3rem;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 2rem;
 `
 
 export const AllDivs = styled.div`
   display: flex;
-  max-width: 1200px;
   width: 100%;
-  margin: auto;
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
@@ -24,10 +24,6 @@ export const AllDivs = styled.div`
   }
 `
 
-export const DivButtonSelect = styled.div`
-
-`;
-
 export const DivAllForm = styled.div`
   display: flex;
   //align-items: center;
@@ -36,39 +32,78 @@ export const DivAllForm = styled.div`
   width: 700px;
 
   padding: 2rem;
+  padding-top: 0rem;
+
   border-radius: 10px;
 `
 
-export const FormStyledInput = styled.form`
+export const DivButtonAcces = styled.div`
   display: flex;
-  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  height: 100px;
   flex-wrap: wrap;
-  margin-top: 1rem;
 
-  div {
-    display: flex;
-    gap: 12px;
+  div{
+    width: 35%;
+    height: 42%;
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+
+
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: transparent;
+    background-color: #CBE4FF;
   }
 
-  input {
-    border: 1px solid #e6e5e5;
-    border-radius: 4px;
-    height: 42px;
-    padding: 1rem;
+  button{
+    flex-wrap: wrap;
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 
-    background: #eeeded;
-
+    border: transparent;
+    color: #0079FF;
     cursor: pointer;
-
-    ::placeholder {
-      color: #8d8686;
-    }
-
-    &:focus {
-      color: #20252e;
-      outline: 1px solid #8d8686;
+  
+    &:focus{
+      color: #CBE4FF;
+      background-color: #0079FF;
     }
   }
+`
+
+export const ButtonAccess = styled.div`
+  max-width: 100%;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  button{
+    width: 50%;
+    height: 100%;
+    
+    border: transparent;
+    background-color: #0079FF;
+    color: #eeeded;
+    border-radius: 8px;
+    transition: all 0.3s;
+
+    :hover{
+      background-color: #03438a;
+    }
+}
 `
 
 

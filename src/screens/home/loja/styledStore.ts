@@ -7,7 +7,6 @@ export const AlignItemCenter = styled.div`
 `;
 
 
-
 export const StyledGlobalStore = styled.div`
   max-width: 1200px;
   width: 1200px;

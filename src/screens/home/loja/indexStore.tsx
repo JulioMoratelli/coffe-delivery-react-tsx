@@ -2,9 +2,28 @@ import { Minus, Plus, ShoppingCart } from "@phosphor-icons/react";
 import coffes from "../../../../imgs/coffes.svg";
 import cart from "../../../../imgs/cart.svg";
 import { StyledFormAddToCart, StyledImgCoffe, StyledTextDescription, StyledStore, StyledGlobalStore, ButtonShoppingCart, AlignItemCenter } from "./styledStore";
+import { useState } from "react";
 
 
 export function Store() {
+  const [qtdAddCart, setQtdAddCart] = useState(0)
+
+
+  function handleAddQtd() {
+
+    setQtdAddCart(qtdAddCart + 1)
+
+  }
+
+  function handleRemoveQtd() {
+    if (qtdAddCart <= 0) {
+      return;
+    }
+
+    setQtdAddCart(qtdAddCart - 1)
+  }
+
+
   return (
     <StyledGlobalStore>
       <AlignItemCenter>
@@ -26,11 +45,11 @@ export function Store() {
               R$ <p>9,90</p>
 
               <div>
-                <button>
+                <button onClick={() => handleRemoveQtd()}>
                   <Minus size={15} />
                 </button>
-                <p>1</p>
-                <button>
+                <p>{qtdAddCart}</p>
+                <button onClick={() => handleAddQtd()}>
                   <Plus size={15} />
                 </button>
               </div>
@@ -60,7 +79,7 @@ export function Store() {
                 <button>
                   <Minus size={15} />
                 </button>
-                <p>1</p>
+                <p>0</p>
                 <button>
                   <Plus size={15} />
                 </button>
