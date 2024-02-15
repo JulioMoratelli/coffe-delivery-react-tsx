@@ -28,7 +28,7 @@ export function Login() {
         <DivAllForm>
           <DivButtonAcces>
             <div>
-              <button onClick={() => handleLoginButton()}>Login</button>
+              <button style={{ background: focusButtonSingin ? "#0079FF" : "#CBE4FF", color: focusButtonSingin ? "#CBE4FF" : "#0079FF" }} onClick={() => handleLoginButton()}>Login</button>
               <button onClick={() => handleRegisterButton()}>Cadastrar</button>
             </div>
           </DivButtonAcces>
