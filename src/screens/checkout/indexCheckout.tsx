@@ -27,8 +27,18 @@ import {
   TitlePayments,
   DeliveryAlignCenter,
 } from "./styledCheckout";
+import { CartContext, CartProps } from "../../context/CartContext";
+import { useContext, useEffect, useState } from "react";
 
 export function Checkout() {
+  const [items, setItems] = useState<CartProps[]>([]);
+  const { cart, total, removeItemCart, addItemCart } = useContext(CartContext)
+
+
+  useEffect(() => {
+    setItems(cart);
+  }, [cart])
+
   return (
     <DeliveryAlignCenter>
       <StyledAllCheckout>
@@ -131,50 +141,34 @@ export function Checkout() {
           </div>
           <PaymentStatus>
             <div>
-              <BagProducts>
-                <div>
-                  <img src={coffes} alt="" />
-                  <PurchaseInformation>
-                    <h3>Expresso Tradicional</h3>
-                    <div>
-                      <button>
-                        <Minus size={16} />
-                      </button>
-                      <p>1</p>
-                      <button>
-                        <Plus size={16} />
-                      </button>
-                    </div>
-                    <ButtonDelet><Trash size={16} /><p>remover</p></ButtonDelet>
-                  </PurchaseInformation>
-                </div>
-                <p>R$ 9,90</p>
-              </BagProducts>
-              <BagProducts>
-                <div>
-                  <img src={coffes} alt="" />
-                  <PurchaseInformation>
-                    <h3>Expresso Tradicional</h3>
-                    <div>
-                      <button>
-                        <Minus size={16} />
-                      </button>
-                      <p>1</p>
-                      <button>
-                        <Plus size={16} />
-                      </button>
-                    </div>
-                    <ButtonDelet><Trash size={16} /><p>remover</p></ButtonDelet>
-                  </PurchaseInformation>
-                </div>
-                <p>R$ 9,90</p>
-              </BagProducts>
+              {items.map((item) => (
+                <BagProducts key={item.id}>
+                  <div>
+                    <img src={item.cover} alt="" />
+                    <PurchaseInformation>
+                      <h3>{item.title}</h3>
+                      <div>
+                        <button>
+                          <Minus size={16} />
+                        </button>
+                        <p>{item.amount}</p>
+                        <button>
+                          <Plus size={16} />
+                        </button>
+                      </div>
+                      <ButtonDelet><Trash size={16} onClick={() => removeItemCart(item)} /><p>remover</p></ButtonDelet>
+                    </PurchaseInformation>
+                  </div>
+                  <p>R$ {item.price}</p>
+                </BagProducts>
+              ))}
+
             </div>
 
             <AccountTotal>
               <div>
                 <p>Total de items</p>
-                <span>R$29,70</span>
+                <span>{total.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}</span>
               </div>
               <div>
                 <p>Entrega</p>
@@ -182,7 +176,7 @@ export function Checkout() {
               </div>
               <div>
                 <h1>Total</h1>
-                <h3>R$ 33,20</h3>
+                <h3>{(total + 3.5).toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}</h3>
               </div>
             </AccountTotal>
 

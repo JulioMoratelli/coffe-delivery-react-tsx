@@ -1,8 +1,8 @@
 import { Minus, Plus, ShoppingCart } from "@phosphor-icons/react";
-import coffes from "../../../../imgs/coffes.svg";
 import cart from "../../../../imgs/cart.svg";
 import { StyledFormAddToCart, StyledImgCoffe, StyledTextDescription, StyledStore, StyledGlobalStore, ButtonShoppingCart, AlignItemCenter } from "./styledStore";
-import { useEffect, useState } from "react";
+import { useCallback, useContext, useEffect, useState } from "react";
+import { CartContext } from "../../../context/CartContext";
 
 const coffee = [
   {
@@ -61,13 +61,27 @@ export interface CoffeeProps {
   nome: string,
   descricao: string,
   valor: number,
-  imagen: string
+  imagem: string
 }
 
 
 export function Store() {
+  const { addItemCart } = useContext(CartContext)
+
   const [coffees, setCoffees] = useState(coffee.map(item => ({ ...item, quantidade: 0 })));
   //const [qtdAddCart, setQtdAddCart] = useState(0)
+
+
+  const handleAddCartItem = useCallback(
+    (product: CoffeeProps) => {
+      //console.log(addItemCart)
+      addItemCart(product);
+
+    }, [addItemCart])
+
+
+  //console.log(handleAddCartItem)
+
 
 
   function handleRemoveQtd(coffee: number) {
@@ -80,7 +94,6 @@ export function Store() {
 
   }
 
-
   function handleAddQtd(coffee: number) {
     setCoffees(qtdCoffees => qtdCoffees.map(item => {
       if (item.id === coffee) {
@@ -90,7 +103,6 @@ export function Store() {
     }))
 
   }
-
 
   return (
     <StyledGlobalStore>
@@ -121,7 +133,7 @@ export function Store() {
                   </button>
                 </div>
 
-                <ButtonShoppingCart>
+                <ButtonShoppingCart onClick={() => handleAddCartItem(item)}>
                   <img src={cart} alt="" />
                 </ButtonShoppingCart>
               </StyledFormAddToCart>
