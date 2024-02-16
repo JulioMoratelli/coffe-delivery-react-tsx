@@ -47,6 +47,26 @@ export const StyleCheckout = styled.div`
         background-color: ${(props) => props.theme['yellow-dark']};
         color: ${(props) => props.theme['yellow-light']}
       }
+
+
+    div {
+      width: 10px;
+      align-items: center;
+      display: flex;
+      height: 13px;
+      padding: 2px;
+      
+
+      border-radius: 100%;
+      background-color: red;
+      color: black;
+      pointer-events: none;
+
+    }
+
+    span {
+
+    }
 `
 
 export const IconLogin = styled.div`
